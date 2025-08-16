@@ -15,5 +15,3 @@ Este projeto em C demonstra o uso de estruturas de controle de fluxo (`if`, `els
 ## Autor
 
 **Guilherme A. Gouvea**
-
-* **Universidade:** Unicesumar
