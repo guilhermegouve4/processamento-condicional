@@ -44,7 +44,7 @@ float inputFloat(char *prompt) { // VERIFICA ENTRADA VÁLIDA DE PONTOS FLUTUANTES
     return data;
 }
 
-void lineBreak(int lines) {
+void lineBreak(int lines) { // FUNÇÃO DE QUEBRA DE LINHAS
     int counter = 0;
 
     while (counter < lines) {
