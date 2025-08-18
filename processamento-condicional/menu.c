@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "questions.h"
 #include "menu.h"
+#include "tools.h"
 
 int displayIntro() {
     system("cls");
@@ -21,18 +22,17 @@ int menu() {
     do {
         
         system("cls");
-        printf("\n\n\n\nSelecione o exercício que deseja consultar digitando o número correspondente:\n\n\n\n\n\n\n");
+        printf("\n\nSelecione o exercício que deseja consultar digitando o número correspondente:\n\n\n\n\n\n\n");
         
         printf("1. Lê os valores A, B, e C e imprime na tela se a soma de A + B é menor do que C.\n\n");
         printf("2. Informa se o número inserido é par ou ímpar.\n\n");
         printf("3. Lê os valores A e B. Se os valores forem iguais calcula sua soma, caso contrário, calcula sua multiplicação.\n\n");
         printf("4. Calcula o dobro de um número caso este seja positivo e seu triplo caso seja negativo.\n\n");
-        printf("5. Recebe um valor e soma 5 caso seja par. Soma 8 se for í­mpar.\n\n");
+        printf("5. Recebe um valor e soma 5 caso seja par. Soma 8 se for ímpar.\n\n");
         printf("6. Com base na altura e no peso, calcula o IMC\n\n");
         printf("7. Selecione para sair.\n\n");
 
-        scanf("%d", &choice);
-        system("cls");
+        choice = inputInt("Insira o número do exercício: \n\n" );
         
         if (choice == 1) {
             question1();
@@ -51,7 +51,7 @@ int menu() {
                 sureToQuit = 1;
             }
         } else {
-            printf("Comando inválido! Digite novamente:\n\n");
+            printf("\n\nComando inválido! Digite novamente:\n\n");
             system("pause");
         }
     } while(sureToQuit == 0);

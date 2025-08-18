@@ -1,11 +1,11 @@
 #ifndef QUESTIONS_H
 #define QUESTIONS_H
 
-int question1();
-int question2();
-int question3();
-int question4();
-int question5();
-int question6();
+void question1();
+void question2();
+void question3();
+void question4();
+void question5();
+void question6();
 
 #endif

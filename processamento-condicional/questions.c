@@ -1,23 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "questions.h"
+#include "tools.h"
 
-int question1() { //FUNÇÃO DA PRIMEIRA QUESTÃO
+void question1() { // QUESTÃO 1
 
     int valueA;
     int valueB;
     int valueC;
     int result;
 
-    printf("Insira o primeiro valor: \n\n");
-    scanf("%d", &valueA);
+    system("cls");
 
-    printf("Insira o segundo valor: \n\n");
-    scanf("%d", &valueB);
-
-    printf("insira o terceiro valor: \n\n");
-    scanf("%d", &valueC);
-
+    valueA = inputInt("Insira o primeiro valor: \n\n");
+    valueB = inputInt("Insira o segundo valor: \n\n");
+    valueC = inputInt("Insira o terceiro valor: \n\n");
+    
     result = valueA + valueB;
 
     if (result < valueC) {
@@ -28,14 +26,13 @@ int question1() { //FUNÇÃO DA PRIMEIRA QUESTÃO
     system("pause");
 }
 
-int question2() { // QUESTÃO NÚMERO 2
+void question2() { // QUESTÃO 2
 
     int value;
     system("cls");
     printf("Exercício número 2:\n\n\n\n");
 
-    printf("insira o valor: \n\n");
-    scanf("%d", &value);
+    value = inputInt("Insira o valor: \n\n");
 
     if(value % 2 == 0) {
         printf("%d é par\n\n", value);
@@ -46,7 +43,7 @@ int question2() { // QUESTÃO NÚMERO 2
     system("pause");
 }
 
-int question3() {
+void question3() { // QUESTÃO 3
 
     int valueA;
     int valueB;
@@ -55,11 +52,8 @@ int question3() {
     system("cls");
     printf("Exercício número 3:\n\n\n\n");
 
-    printf("Insira o primeiro valor: \n\n");
-    scanf("%d", &valueA);
-
-    printf("Insira o segundo valor: \n\n");
-    scanf("%d", &valueB);
+    valueA = inputInt("Insira o primeiro valor: \n\n");
+    valueB = inputInt("insira o segundo valor: \n\n");
 
     if(valueA == valueB) {
         result = valueA + valueB;
@@ -71,7 +65,7 @@ int question3() {
     system("pause");
 }
 
-int question4() {
+void question4() { // QUESTÃO 4
 
     int num;
     int result;
@@ -79,28 +73,28 @@ int question4() {
     system("cls");
     printf("Exercício número 4:\n\n\n\n");
 
-    printf("Insira um valor: \n\n");
-    scanf("%d", &num);
+    num = inputInt("Insira um valor: \n\n");
 
     if (num >= 0) {
         result = num * 2;
     } else {
         result = num * 3;
         }
+
     printf("O resultado é: %d\n\n\n\n", result);
     system("pause");
     system("cls");
 }
 
-int question5() {
+void question5() { // QUESTÃO 5
 
     int num;
     int result;
 
     system("cls");
     printf("Exercício número: 5\n\n\n\n");
-    printf("Insira um valor: \n\n");
-    scanf("%d", &num);
+
+    num = inputInt("Insira um valor: \n\n");
 
     if (num % 2 == 0) {
         result = num + 5;
@@ -112,7 +106,7 @@ int question5() {
     system("pause");
 }
 
-int question6() { // FUNÇÃO QUE CALCULA O IMC 
+void question6() { // QUESTÃO 6
     float weigth;
     float height;
     float imc;
@@ -120,11 +114,8 @@ int question6() { // FUNÇÃO QUE CALCULA O IMC
     system("cls");
     printf("Exercício número 6:\n\n\n\n");
 
-    printf("Insira sua massa: \n\n");
-    scanf("%f", &weigth);
-
-    printf("\nInsira sua altura em centímetros (Ex: 175): \n\n");
-    scanf("%f", &height);
+    weigth = inputFloat("Insira sua massa: \n\n");
+    height = inputFloat("insira sua altura em centímetros");
 
     height = height / 100;
     imc = weigth / (height * height);
