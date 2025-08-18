@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "questions.h"
 #include "menu.h"
+#include "tools.h"
 
 int inputInt(char *prompt) { // VERIFICA ENTRADA VÁLIDA DE INTEIROS
     int data;
@@ -12,10 +13,9 @@ int inputInt(char *prompt) { // VERIFICA ENTRADA VÁLIDA DE INTEIROS
         status = scanf("%d", &data);
 
         if (status != 1) {
-            printf("Valor inválido, por favor tente novamente.\n");
+            printf("Valor inválido, por favor tente novamente.");
+            lineBreak(1);
             while (getchar() != '\n');
-            system("pause");
-            system("cls");
         }
         
     } while (status != 1);
@@ -34,13 +34,21 @@ float inputFloat(char *prompt) { // VERIFICA ENTRADA VÁLIDA DE PONTOS FLUTUANTES
         status = scanf("%f", &data);
 
         if (status != 1) {
-            printf("Valor inválido, por favor tente novamente.\n");
+            printf("Valor inválido, por favor tente novamente.");
+            lineBreak(1);
             while (getchar() != '\n');
-            system("pause");
-            system("cls");
         }
 
     } while (status != 1);
 
     return data;
+}
+
+void lineBreak(int lines) {
+    int counter = 0;
+
+    while (counter < lines) {
+        printf("\n");
+        counter++;
+    }
 }

@@ -11,17 +11,24 @@ void question1() { // QUESTÃO 1
     int result;
 
     system("cls");
+    printf("Exercício número 1:");
+    lineBreak(4);
 
-    valueA = inputInt("Insira o primeiro valor: \n\n");
-    valueB = inputInt("Insira o segundo valor: \n\n");
-    valueC = inputInt("Insira o terceiro valor: \n\n");
+    valueA = inputInt("Insira o primeiro valor: ");
+    lineBreak(2);
+    valueB = inputInt("Insira o segundo valor: ");
+    lineBreak(2);
+    valueC = inputInt("Insira o terceiro valor: ");
+    lineBreak(2);
     
     result = valueA + valueB;
 
     if (result < valueC) {
-        printf("A soma do valor %d com %d é menor do que %d\n\n", valueA, valueB, valueC);
+        printf("A soma do valor %d com %d é menor do que %d.", valueA, valueB, valueC);
+        lineBreak(2);
     } else {
-        printf("A soma do valor %d com %d não é maior do que %d\n\n", valueA, valueB, valueC);
+        printf("A soma do valor %d com %d não é maior do que %d.", valueA, valueB, valueC);
+        lineBreak(2);
     }
     system("pause");
 }
@@ -30,14 +37,18 @@ void question2() { // QUESTÃO 2
 
     int value;
     system("cls");
-    printf("Exercício número 2:\n\n\n\n");
+    printf("Exercício número 2:");
+    lineBreak(4);
 
-    value = inputInt("Insira o valor: \n\n");
+    value = inputInt("Insira o valor: ");
+    lineBreak(2);
 
     if(value % 2 == 0) {
-        printf("%d é par\n\n", value);
+        printf("%d é par.", value);
+        lineBreak(4);
     } else {
-        printf("%d é ímpar\n\n", value);
+        printf("%d é ímpar.", value);
+        lineBreak(4);
     }
 
     system("pause");
@@ -50,17 +61,21 @@ void question3() { // QUESTÃO 3
     int result;
 
     system("cls");
-    printf("Exercício número 3:\n\n\n\n");
+    printf("Exercício número 3:");
+    lineBreak(4);
 
-    valueA = inputInt("Insira o primeiro valor: \n\n");
-    valueB = inputInt("insira o segundo valor: \n\n");
+    valueA = inputInt("Insira o primeiro valor: ");
+    lineBreak(2);
+    valueB = inputInt("insira o segundo valor: ");
+    lineBreak(2);
 
     if(valueA == valueB) {
         result = valueA + valueB;
     } else {
         result = valueA * valueB;
         }
-    printf("O resultado é %d\n\n", result);
+    printf("O resultado é %d.", result);
+    lineBreak(4);
 
     system("pause");
 }
@@ -71,9 +86,11 @@ void question4() { // QUESTÃO 4
     int result;
 
     system("cls");
-    printf("Exercício número 4:\n\n\n\n");
+    printf("Exercício número 4: ");
+    lineBreak(4);
 
-    num = inputInt("Insira um valor: \n\n");
+    num = inputInt("Insira um valor: ");
+    lineBreak(2);
 
     if (num >= 0) {
         result = num * 2;
@@ -81,7 +98,9 @@ void question4() { // QUESTÃO 4
         result = num * 3;
         }
 
-    printf("O resultado é: %d\n\n\n\n", result);
+    printf("O resultado é: %d", result);
+    lineBreak(4);
+
     system("pause");
     system("cls");
 }
@@ -92,9 +111,11 @@ void question5() { // QUESTÃO 5
     int result;
 
     system("cls");
-    printf("Exercício número: 5\n\n\n\n");
+    printf("Exercício número: 5");
+    lineBreak(4);
 
-    num = inputInt("Insira um valor: \n\n");
+    num = inputInt("Insira um valor: ");
+    lineBreak(2);
 
     if (num % 2 == 0) {
         result = num + 5;
@@ -102,7 +123,8 @@ void question5() { // QUESTÃO 5
         result = num + 8;
     }
 
-    printf("O resultado é: %d\n\n\n\n", result);
+    printf("O resultado é: %d", result);
+    lineBreak(4);
     system("pause");
 }
 
@@ -112,22 +134,29 @@ void question6() { // QUESTÃO 6
     float imc;
 
     system("cls");
-    printf("Exercício número 6:\n\n\n\n");
+    printf("Exercício número 6: ");
+    lineBreak(4);
 
-    weigth = inputFloat("Insira sua massa: \n\n");
-    height = inputFloat("insira sua altura em centímetros\n\n");
+    weigth = inputFloat("Insira sua massa: ");
+    lineBreak(2);
+    height = inputFloat("insira sua altura em centímetros: ");
+    lineBreak(2);
 
     height = height / 100;
     imc = weigth / (height * height);
 
     if (imc > 30) {
-        printf("\n\nVocê está obeso\n\n\n\n");
+        printf("Você está obeso");
+        lineBreak(4);
     } else if (imc > 25) {
-        printf("\n\nVocê está com sobrepeso\n\n\n\n");
+        printf("Você está com sobrepeso");
+        lineBreak(4);
     } else if (imc > 18.5) {
-        printf("\n\nParabéns! Você está com o peso ideal :)\n\n\n\n");
+        printf("Parabéns! Você está com o peso ideal :)");
+        lineBreak(4);
     } else {
-        printf("\n\nVocê está abaixo do peso\n\n\n\n");
+        printf("Você está abaixo do peso");
+        lineBreak(4);
     }
 
     system("pause");

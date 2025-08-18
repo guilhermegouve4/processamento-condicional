@@ -3,5 +3,6 @@
 
 int inputInt();
 float inputFloat();
+void lineBreak();
 
 #endif
