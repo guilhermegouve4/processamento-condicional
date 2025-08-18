@@ -115,7 +115,7 @@ void question6() { // QUESTÃO 6
     printf("Exercício número 6:\n\n\n\n");
 
     weigth = inputFloat("Insira sua massa: \n\n");
-    height = inputFloat("insira sua altura em centímetros");
+    height = inputFloat("insira sua altura em centímetros\n\n");
 
     height = height / 100;
     imc = weigth / (height * height);
