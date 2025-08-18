@@ -4,7 +4,7 @@
 #include "menu.h"
 #include "tools.h"
 
-void displayIntro() {
+void displayIntro() { // INTRODUÇÃO
     system("cls");
     printf("Bem vindo a minha lista de exercícios de condicionais em C");
     lineBreak(2);
@@ -17,7 +17,7 @@ void displayIntro() {
     system("cls");
 }
 
-int menu() {
+int menu() { // MENU INTERATIVO
         int choice;
         int sureToQuit = 0;
 
@@ -72,7 +72,7 @@ int menu() {
     return 0;
 }
 
-int quitf() {
+int quitf() { // FUNÇÃO DE CONFIRMAÇÃO DE SAÍDA DO PROGRAMA
 
     int quit;
     do {
